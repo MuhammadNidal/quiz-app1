@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./images/quiz.ico" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Quiz Application</title>
+</head>
+
+<body>
+    <div class="pt-4">
+
+        <p class="heading text-center fs-2 fw-bold" id="quiz-topic">Quiz Application - Computer Language</p>
+
+    </div>
+    <div class="qsn-container">
+        <div>
+            <div class="container">
+                <p class="qsn text-secondary">1. Which Language runs in a web Browser?</p>
+                <input class="form-check-input me-1 mb-2" type="radio" name="quiz1" id="" value="c"><span
+                    class="text-secondary">C</span><br>
+                <input class="form-check-input me-1 mb-2" type="radio" name="quiz1" id="" value="c++"> <span
+                    class="text-secondary">C++</span> <br>
+                <input class="form-check-input me-1 mb-2" type="radio" name="quiz1" id="" value="python"> <span
+                    class="text-secondary">Python</span> <br>
+                <input class="form-check-input me-1 mb-2" type="radio" name="quiz1" id="" value="javascript"> <span
+                    class="text-secondary">JavaScript</span>
+            </div>
+            <div class="container">
+                <p class="qsn text-secondary">2. We can use JavaScript inside an HTML file? </p>
+                <input class="form-check-input me-1 mb-2" type="radio" name="quiz2" id="" value="true"><span
+                    class="text-secondary">True</span><br>
+                <input class="form-check-input me-1 mb-2" type="radio" name="quiz2" id="" value="false"> <span
+                    class="text-secondary">False</span> <br>
+            </div>
+            <div class="container">
+                <p class="qsn text-secondary">3. How do you write "Hello World" in an alert box?</p>
+                <input class="form-check-input me-1 mb-2" type="radio" name="quiz3" id="" value="alert"><span
+                    class="text-secondary">alert("Hello World")</span><br>
+                <input class="form-check-input me-1 mb-2" type="radio" name="quiz3" id="" value="alertBox"> <span
+                    class="text-secondary">alertBox("Hello World")</span> <br>
+                <input class="form-check-input me-1 mb-2" type="radio" name="quiz3" id="" value="msg"> <span
+                    class="text-secondary">msg("Hello World")</span> <br>
+                <input class="form-check-input me-1 mb-2" type="radio" name="quiz3" id="" value="msgBox"> <span
+                    class="text-secondary">msgBox("Hello World")</span>
+            </div>
+            <div class="container">
+                <p class="qsn text-secondary">4. How do you create a function in JavaScript?</p>
+                <input class="form-check-input me-1 mb-2" type="radio" name="quiz4" id="" value="function1"><span
+                    class="text-secondary">function = myFunction()</span><br>
+                <input class="form-check-input me-1 mb-2" type="radio" name="quiz4" id="" value="function2"><span
+                    class="text-secondary">function myFunction() </span><br>
+                <input class="form-check-input me-1 mb-2" type="radio" name="quiz4" id="" value="function3"> <span
+                    class="text-secondary">function:myFunction()</span> <br>
+                <input class="form-check-input me-1 mb-2" type="radio" name="quiz4" id="" value="function4"> <span
+                    class="text-secondary">function => function()</span>
+            </div>
+            <div class="container">
+                <p class="qsn text-secondary">5. How do you call a function named "myFunction"?</p>
+                <input class="form-check-input me-1 mb-2" type="radio" name="quiz5" id="" value="call1"><span
+                    class="text-secondary">call function myFunction()</span><br>
+                <input class="form-check-input me-1 mb-2" type="radio" name="quiz5" id="" value="call2"> <span
+                    class="text-secondary">call myFunction()</span> <br>
+                <input class="form-check-input me-1 mb-2" type="radio" name="quiz5" id="" value="call3"> <span
+                    class="text-secondary">myFunction()</span> <br>
+                <input class="form-check-input me-1 mb-2" type="radio" name="quiz5" id="" value="call4"> <span
+                    class="text-secondary">myFunction</span> <br>
+            </div>
+            <div class="container">
+                <p class="qsn text-secondary">6. How to write an IF statement in JavaScript?</p>
+                <input class="form-check-input me-1 mb-2" type="radio" name="quiz6" id="" value="if1"><span
+                    class="text-secondary">if(i==5)</span><br>
+                <input class="form-check-input me-1 mb-2" type="radio" name="quiz6" id="" value="if2"><span
+                    class="text-secondary"> if i == 5 then </span><br>
+                <input class="form-check-input me-1 mb-2" type="radio" name="quiz6" id="" value="if3"><span
+                    class="text-secondary"> if i = 5 </span><br>
+                <input class="form-check-input me-1 mb-2" type="radio" name="quiz6" id="" value="if4"><span
+                    class="text-secondary">if i = 5 then</span>
+            </div>
+            <div class="container">
+                <p class="qsn text-secondary">7. How to write an IF statement for executing some code if "i" is NOT
+                    equal to 5?</p>
+                <input class="form-check-input me-1 mb-2" type="radio" name="quiz7" id="" value="if1"><span
+                    class="text-secondary">if(<>)</span><br>
+                <input class="form-check-input me-1 mb-2" type="radio" name="quiz7" id="" value="if2"><span
+                    class="text-secondary"> if i <> 5 then </span><br>
+                <input class="form-check-input me-1 mb-2" type="radio" name="quiz7" id="" value="if3"> <span
+                    class="text-secondary">if i != 5 then </span><br>
+                <input class="form-check-input me-1 mb-2" type="radio" name="quiz7" id="" value="if4"><span
+                    class="text-secondary">if(i !=5)</span>
+            </div>
+        </div>
+
+    </div>
+    <button class=" btn btn-success text-white d-block mx-auto px-5 py-2 mt-4 fw-bold" id="submit">Submit</button>
+    <p class="pb-5"></p>
+    <script src="../quiz-app-main/js/app.js"></script>
+</body>
+
+</html>
